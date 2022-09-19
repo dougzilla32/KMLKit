@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91A6DFDD28D90CCE0057E827 /* ZIPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A6DFDC28D90CCE0057E827 /* ZIPFoundation.framework */; };
+		91A6DFDE28D90CCE0057E827 /* ZIPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91A6DFDC28D90CCE0057E827 /* ZIPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AD2A5A1626037537001147C3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD2A5A1426037537001147C3 /* README.md */; };
 		AD2A5A1726037537001147C3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD2A5A1426037537001147C3 /* README.md */; };
 		AD2A5A1826037537001147C3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD2A5A1426037537001147C3 /* README.md */; };
@@ -44,7 +46,6 @@
 		AD55D51B25E991390069A6CE /* KMLOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE196DD25E829CE00935306 /* KMLOrientation.swift */; };
 		AD55D51F25E9914A0069A6CE /* KMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE1963C25E7F4D500935306 /* KMLParser.swift */; };
 		AD55D52125E9914A0069A6CE /* ParsingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE1965025E7F58500935306 /* ParsingError.swift */; };
-		AD55D52825E991780069A6CE /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = AD55D52725E991780069A6CE /* ZIPFoundation */; };
 		AD55D54025E997200069A6CE /* KmlColorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD55D53F25E997200069A6CE /* KmlColorTest.swift */; };
 		AD55D56025E9CD600069A6CE /* stylemap_example.kml in Resources */ = {isa = PBXBuildFile; fileRef = AD55D54425E9CD5F0069A6CE /* stylemap_example.kml */; };
 		AD55D56125E9CD600069A6CE /* liststyle_example.kml in Resources */ = {isa = PBXBuildFile; fileRef = AD55D54525E9CD5F0069A6CE /* liststyle_example.kml */; };
@@ -103,7 +104,6 @@
 		ADE1963025E7F2CB00935306 /* KMLKit.h in Headers */ = {isa = PBXBuildFile; fileRef = ADE1962225E7F2CB00935306 /* KMLKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ADE1963E25E7F4D500935306 /* KMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE1963C25E7F4D500935306 /* KMLParser.swift */; };
 		ADE1964625E7F4E400935306 /* KMLParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE1964425E7F4E400935306 /* KMLParserTest.swift */; };
-		ADE1964D25E7F54C00935306 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = ADE1964C25E7F54C00935306 /* ZIPFoundation */; };
 		ADE1965125E7F58500935306 /* ParsingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE1965025E7F58500935306 /* ParsingError.swift */; };
 		ADE1965A25E7F71F00935306 /* aprsfi_export_W8AGT-9_20210222_122629_20210225_122629.kml in Resources */ = {isa = PBXBuildFile; fileRef = ADE1965825E7F71F00935306 /* aprsfi_export_W8AGT-9_20210222_122629_20210225_122629.kml */; };
 		ADE1965B25E7F71F00935306 /* aprsfi_export_W8AGT-9_20210222_122629_20210225_122629.kmz in Resources */ = {isa = PBXBuildFile; fileRef = ADE1965925E7F71F00935306 /* aprsfi_export_W8AGT-9_20210222_122629_20210225_122629.kmz */; };
@@ -145,7 +145,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		91A6DFDF28D90CCE0057E827 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				91A6DFDE28D90CCE0057E827 /* ZIPFoundation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		91A6DFDC28D90CCE0057E827 /* ZIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2A5A1426037537001147C3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AD2A5A1526037537001147C3 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AD2A5A4F2603BE87001147C3 /* atom-author-link.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "atom-author-link.xsd"; sourceTree = "<group>"; };
@@ -242,7 +257,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD55D52825E991780069A6CE /* ZIPFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +264,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADE1964D25E7F54C00935306 /* ZIPFoundation in Frameworks */,
+				91A6DFDD28D90CCE0057E827 /* ZIPFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +302,7 @@
 		AD55D52625E991780069A6CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				91A6DFDC28D90CCE0057E827 /* ZIPFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -461,7 +476,6 @@
 			);
 			name = "iOS KMLKit";
 			packageProductDependencies = (
-				AD55D52725E991780069A6CE /* ZIPFoundation */,
 			);
 			productName = KMLKit;
 			productReference = AD55D4F025E990E20069A6CE /* KMLKit.framework */;
@@ -475,6 +489,7 @@
 				ADE1961B25E7F2CB00935306 /* Sources */,
 				ADE1961C25E7F2CB00935306 /* Frameworks */,
 				ADE1961D25E7F2CB00935306 /* Resources */,
+				91A6DFDF28D90CCE0057E827 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -482,7 +497,6 @@
 			);
 			name = "macOS KMLKit";
 			packageProductDependencies = (
-				ADE1964C25E7F54C00935306 /* ZIPFoundation */,
 			);
 			productName = KMLKit;
 			productReference = ADE1961F25E7F2CB00935306 /* KMLKit.framework */;
@@ -513,7 +527,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					AD55D4EF25E990E20069A6CE = {
 						CreatedOnToolsVersion = 12.4;
@@ -538,7 +552,6 @@
 			);
 			mainGroup = ADE1961525E7F2CB00935306;
 			packageReferences = (
-				ADE1964B25E7F54C00935306 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
 			);
 			productRefGroup = ADE1962025E7F2CB00935306 /* Products */;
 			projectDirPath = "";
@@ -817,6 +830,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -881,6 +895,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -909,6 +924,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FYX55SR9QC;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -935,6 +951,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FYX55SR9QC;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -961,6 +978,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = FYX55SR9QC;
 				INFOPLIST_FILE = KMLKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -984,6 +1002,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = FYX55SR9QC;
 				INFOPLIST_FILE = KMLKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1039,30 +1058,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		ADE1964B25E7F54C00935306 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.12;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		AD55D52725E991780069A6CE /* ZIPFoundation */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ADE1964B25E7F54C00935306 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
-			productName = ZIPFoundation;
-		};
-		ADE1964C25E7F54C00935306 /* ZIPFoundation */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ADE1964B25E7F54C00935306 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
-			productName = ZIPFoundation;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ADE1961625E7F2CB00935306 /* Project object */;
 }
